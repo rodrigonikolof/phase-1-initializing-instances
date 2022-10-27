@@ -22,11 +22,16 @@ class Dinner{
         this.entree = entree;
         this.#dessert = dessert;
     }
-    sayHello(){
-         return console.log(`${this} says hi`)
+    showDessert(){
+         return console.log(this.#dessert)
     }
 }
 
 const rodrigo = new Dinner ('blob', 'shoob', 'doob', 'this grub')
+console.log(rodrigo)
 
-rodrigo.sayHello()
+rodrigo.dessert = 'lettuce'
+
+console.log(rodrigo)
+
+rodrigo.showDessert()
